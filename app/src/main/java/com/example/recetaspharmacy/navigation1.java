@@ -33,7 +33,8 @@ import java.sql.Statement;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class navigation1 extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener,
-        NavigationView.OnNavigationItemSelectedListener,menu1.OnFragmentInteractionListener,Conocenos.OnFragmentInteractionListener
+        NavigationView.OnNavigationItemSelectedListener,menu1.OnFragmentInteractionListener,Conocenos.OnFragmentInteractionListener,
+        Tendencias.OnFragmentInteractionListener
 {
     private CircleImageView PhotoImageView;
     private TextView NameTextView;
@@ -88,7 +89,7 @@ public class navigation1 extends AppCompatActivity implements GoogleApiClient.On
           miFragment=new menu1();
           fragentSeleccionado=true;
         }else if(id==R.id.tendencias){
-            miFragment=new Conocenos();
+            miFragment=new Tendencias();
             fragentSeleccionado=true;
         }else if(id==R.id.productos){
 
